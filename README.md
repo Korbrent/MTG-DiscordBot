@@ -139,7 +139,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Contact
-Korbin Shelly - [@Kor](https://discord.com/users/189871577783861258) - kortheshells@gmail.com
+Korbin Shelley - [@Kor](https://discord.com/users/189871577783861258) - kortheshells@gmail.com
 Brenton Candelaria - [@HyPerNT](https://discord.com/users/198554971954872320) - brentoncandelaria@gmail.com
 Richard Duran - [@MoodyPDuck](https://discord.com/users/337704272697229313) - richduran13@gmail.com
 

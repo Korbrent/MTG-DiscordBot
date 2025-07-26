@@ -8,7 +8,7 @@ dependencies = [
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [
-    {name = "Korbin Shelly", email = "kortheshells@gmail.com"},
+    {name = "Korbin Shelley", email = "kortheshells@gmail.com"},
     {name = "Brenton Candelaria", email = "brentoncandelaria@gmail.com"},
     {name = "Richard Duran", email = "richduran13@gmail.com"}
 ]
