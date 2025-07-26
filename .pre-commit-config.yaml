@@ -18,6 +18,9 @@ repos:
     -   id: end-of-file-fixer
         exclude: ^docs/
     -   id: check-yaml
+    -   id: check-toml
+    -   id: no-commit-to-branch
+    -   id: double-quote-string-fixer
     -   id: check-added-large-files
 - repo: local
   hooks:

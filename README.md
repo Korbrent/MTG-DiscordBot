@@ -90,7 +90,7 @@ pip3 install pyrchidekt scrython discord-py-interactions --upgrade
 ```
 2. Install additional python modules to support use of pre-commit hooks, tests, and coverage reports
 ```sh
-pip3 install poetry mypy flake8 flake8-pyproject black pyroma xenon interrogate handsdown mkdocs pytest coverage coverage-badge isort conventional-pre-commit
+pip3 install poetry mypy flake8 flake8-pyproject black pyroma xenon interrogate handsdown mkdocs pytest coverage coverage-badge isort conventional-pre-commit dos2unix
 ```
 3. Congrats dude. You did it.
 
@@ -103,7 +103,11 @@ pip3 install pre-commit
 ```sh
 pre-commit install --install-hooks
 ```
-3. (Optional) Test the installation
+3. Build the package to generate additional data used by the pre-commit hooks.
+```sh
+python3 -m build
+```
+4. (Optional) Test the installation
 ```sh
 poetry run pre-commit run --all-files
 ```
@@ -135,7 +139,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Contact
-Korbin Shelly - [@Kor](https://discord.com/users/189871577783861258) -
+Korbin Shelly - [@Kor](https://discord.com/users/189871577783861258) - kortheshells@gmail.com
 Brenton Candelaria - [@HyPerNT](https://discord.com/users/198554971954872320) - brentoncandelaria@gmail.com
 Richard Duran - [@MoodyPDuck](https://discord.com/users/337704272697229313) - richduran13@gmail.com
 

@@ -8,7 +8,7 @@ dependencies = [
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [
-    {name = "Korbin Chelly", email = "kortheshells@gmail.com"},
+    {name = "Korbin Shelly", email = "kortheshells@gmail.com"},
     {name = "Brenton Candelaria", email = "brentoncandelaria@gmail.com"},
     {name = "Richard Duran", email = "richduran13@gmail.com"}
 ]
@@ -47,7 +47,7 @@ packages = [
 ]
 version = "0.1.0"
 description = "A small Discord bot providing utilities for the popular TCG Magic The Gathering"
-authors = ["Korbrent <>", "HyPerNT <brentoncandelaria@gmail.com>", "rduran03 <richduran13@gmail.com>"]
+authors = ["Korbrent <kortheshells@gmail.com>", "HyPerNT <brentoncandelaria@gmail.com>", "rduran03 <richduran13@gmail.com>"]
 readme = "README.md"
 license = "MIT"
 
