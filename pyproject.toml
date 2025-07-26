@@ -1,0 +1,73 @@
+[project]
+name = "MTG-DiscordBot"
+version = "0.1.0"
+description = "A small Discord bot providing utilities for the popular TCG Magic The Gathering"
+dependencies = [
+
+]
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    {name = "Korbin Chelly", email = "kortheshells@gmail.com"},
+    {name = "Brenton Candelaria", email = "brentoncandelaria@gmail.com"},
+    {name = "Richard Duran", email = "richduran13@gmail.com"}
+]
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = [
+    "MTG",
+    "Magic The Gathering",
+    "Discord",
+    "Discord Bot"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Framework :: Pytest",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/Korbrent/MTG-DiscordBot"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "MTG-DiscordBot"
+packages = [
+    { include = "example", from = "src"}
+]
+version = "0.1.0"
+description = "A small Discord bot providing utilities for the popular TCG Magic The Gathering"
+authors = ["Korbrent <>", "HyPerNT <brentoncandelaria@gmail.com>", "rduran03 <richduran13@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.2.0"
+
+[tool.flake8]
+max-line-length = 150
+
+[tool.interrogate]
+ignore-init-module = true
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+pythonpath = "src"
+testpaths = [
+    "tests",
+]
