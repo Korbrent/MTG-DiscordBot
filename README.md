@@ -70,6 +70,13 @@ All development is facilitated through the Github Project or the development Dis
 
 ## Setup Guide
 
+### Prerequisites
+
+This project requires `dos2unix` for some pre-commit hooks.
+```sh
+sudo apt install -y dos2unix
+```
+
 ### Configuring your Virtual Environment
 
 First, let's create a virtual environment so we don't install the plugins to your global Python installation and risk version conflicts.
@@ -84,30 +91,22 @@ source venv/bin/activate
 ```
 
 ### Installing the necessary plugins
-1. Install the necessary plugins with pip.
+1. Install the necessary modules with poetry
 ```sh
-pip3 install pyrchidekt scrython discord-py-interactions --upgrade
+poetry install
 ```
-2. Install additional python modules to support use of pre-commit hooks, tests, and coverage reports
-```sh
-pip3 install poetry mypy flake8 flake8-pyproject black pyroma xenon interrogate handsdown mkdocs pytest coverage coverage-badge isort conventional-pre-commit dos2unix
-```
-3. Congrats dude. You did it.
+2. Congrats dude. You did it.
 
 ### Setting up pre-commit hooks
-1. Install pre-commit hooks
-```sh
-pip3 install pre-commit
-```
-2. Run the pre-commit-hooks installer
+1. Run the pre-commit-hooks installer
 ```sh
 pre-commit install --install-hooks
 ```
-3. Build the package to generate additional data used by the pre-commit hooks.
+2. Build the package to generate additional data used by the pre-commit hooks.
 ```sh
 python3 -m build
 ```
-4. (Optional) Test the installation
+3. (Optional) Test the installation
 ```sh
 poetry run pre-commit run --all-files
 ```
@@ -117,12 +116,14 @@ poetry run pre-commit run --all-files
 # Built With
 
 * [Black][black-url]
+* [Conventional-pre-commit][cpc-url]
 * [Coverage][coverage-url]
 * [Coverage-badge][coverage-badge-url]
 * [Flake8][flake8-url]
 * [Handsdown][hd-url]
 * [Interactions.py][dci-url]
 * [Interrogate][int-url]
+* [Isort][isort-url]
 * [MkDocs][mkdocs-url]
 * [MyPy][mypy-url]
 * [Pre-commit-hooks][pch-url]
@@ -176,3 +177,5 @@ Project Link: [https://github.com/Korbrent/MTG-DiscordBot](https://github.com/Ko
 [dci-url]: https://github.com/interactions-py
 [pyrchidekt-url]: https://github.com/linkian209/pyrchidekt
 [scrython-url]: https://github.com/NandaScott/Scrython
+[cpc-url]: https://github.com/compilerla/conventional-pre-commit
+[isort-url]: https://pycqa.github.io/isort/

@@ -3,7 +3,24 @@ name = "MTG-DiscordBot"
 version = "0.1.0"
 description = "A small Discord bot providing utilities for the popular TCG Magic The Gathering"
 dependencies = [
-
+    "poetry",
+    "mypy",
+    "flake8",
+    "flake8-pyproject",
+    "black",
+    "pyroma",
+    "xenon",
+    "interrogate",
+    "handsdown",
+    "mkdocs",
+    "pytest",
+    "coverage",
+    "coverage-badge",
+    "isort",
+    "conventional-pre-commit",
+    "scrython",
+    "pyrchidekt",
+    "discord-py-interactions"
 ]
 readme = "README.md"
 requires-python = ">=3.11"
