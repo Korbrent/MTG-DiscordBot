@@ -20,7 +20,8 @@ dependencies = [
     "conventional-pre-commit",
     "scrython",
     "pyrchidekt",
-    "discord-py-interactions"
+    "discord-py-interactions",
+    "build (>=1.2.2.post1,<2.0.0)"
 ]
 readme = "README.md"
 requires-python = ">=3.11"
