@@ -4,7 +4,6 @@ version = "0.1.0"
 description = "A small Discord bot providing utilities for the popular TCG Magic The Gathering"
 dependencies = [
     "black",
-    "build",
     "conventional-pre-commit",
     "discord-py-interactions",
     "flake8",
@@ -22,6 +21,7 @@ dependencies = [
     "coverage (>=7.10.1,<8.0.0)",
     "coverage-badge (>=1.1.2,<2.0.0)",
     "interrogate (>=1.7.0,<2.0.0)",
+    "build (>=1.2.2.post1,<2.0.0)",
 ]
 readme = "README.md"
 requires-python = ">=3.11"
@@ -80,6 +80,7 @@ handsdown = "^2.1.0"
 coverage = "^7.10.1"
 coverage-badge = "^1.1.2"
 interrogate = "^1.7.0"
+build = "^1.2.2.post1"
 
 
 [tool.flake8]
