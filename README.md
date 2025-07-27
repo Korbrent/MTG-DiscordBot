@@ -63,36 +63,31 @@ All development is facilitated through the Github Project or the development Dis
 
 ## Prerequisites
 
-- Python (Obviously)
-- *tbd*
-  -  [Scrython](https://github.com/NandaScott/Scrython) - Python library for accessing the Scryfall API
-  -  [Pyrchidekt](https://github.com/linkian209/pyrchidekt) - Python library for accessing the Archidekt API
+## Prerequisites
 
-## Setup Guide
-
-### Prerequisites
-
-This project requires `dos2unix` for some pre-commit hooks and uses `poetry` for building/dependency resolution.
+This project requires `dos2unix` for some pre-commit hooks and uses `poetry` for building/dependency resolution, as well as python 3.11 or greater.
 ```sh
-sudo apt install -y dos2unix
+sudo apt install -y dos2unix python3
 pip3 install --upgrade poetry
 ```
 
+## Setup Guide
+
 ### Installing the necessary plugins
-1. Install the necessary modules with poetry
+1. Install the necessary modules with `poetry`.
 ```sh
 poetry install
 ```
 2. Congrats dude. You did it.
 
 ### Setting up pre-commit hooks
-1. Run the pre-commit-hooks installer
-```sh
-pre-commit install --install-hooks
-```
-2. Build the package to generate additional data used by the pre-commit hooks.
+1. Build the package to generate additional data used by the pre-commit hooks.
 ```sh
 python3 -m build
+```
+2. Run the pre-commit-hooks installer
+```sh
+pre-commit install --install-hooks
 ```
 3. (Optional) Test the installation
 ```sh
