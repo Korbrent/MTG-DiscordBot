@@ -74,20 +74,8 @@ All development is facilitated through the Github Project or the development Dis
 
 This project requires `dos2unix` for some pre-commit hooks and uses `poetry` for building/dependency resolution.
 ```sh
-sudo apt install -y dos2unix poetry
-```
-
-### Configuring your Virtual Environment
-
-First, let's create a virtual environment so we don't install the plugins to your global Python installation and risk version conflicts.
-
-1. Create a new venv
-```sh
-python -m venv venv
-```
-2. Activate the venv
-```sh
-source venv/bin/activate
+sudo apt install -y dos2unix
+pip3 install --upgrade poetry
 ```
 
 ### Installing the necessary plugins
