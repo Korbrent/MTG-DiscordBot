@@ -72,9 +72,9 @@ All development is facilitated through the Github Project or the development Dis
 
 ### Prerequisites
 
-This project requires `dos2unix` for some pre-commit hooks.
+This project requires `dos2unix` for some pre-commit hooks and uses `poetry` for building/dependency resolution.
 ```sh
-sudo apt install -y dos2unix
+sudo apt install -y dos2unix poetry
 ```
 
 ### Configuring your Virtual Environment
