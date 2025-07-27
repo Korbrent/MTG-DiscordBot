@@ -11,7 +11,6 @@ dependencies = [
     "discord-py-interactions",
     "flake8",
     "flake8-pyproject",
-    "handsdown",
     "interrogate",
     "mkdocs",
     "mypy",
@@ -22,6 +21,7 @@ dependencies = [
     "xenon",
     "isort (>=6.0.1,<7.0.0)",
     "pytest (>=8.4.1,<9.0.0)",
+    "handsdown (>=2.1.0,<3.0.0)",
 ]
 readme = "README.md"
 requires-python = ">=3.11"
@@ -76,6 +76,7 @@ python = "^3.11"
 pre-commit = "^4.2.0"
 isort = "^6.0.1"
 pytest = "^8.4.1"
+handsdown = "^2.1.0"
 
 
 [tool.flake8]
