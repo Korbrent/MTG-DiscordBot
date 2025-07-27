@@ -1,0 +1,101 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+default_install_hook_types:
+  - pre-commit
+  - commit-msg
+
+repos:
+-   repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v4.2.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+        args: []
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+        exclude: ^docs/
+    -   id: check-yaml
+    -   id: check-toml
+    -   id: no-commit-to-branch
+    -   id: double-quote-string-fixer
+    -   id: check-added-large-files
+- repo: local
+  hooks:
+      - id: isort
+        name: isort
+        language: system
+        pass_filenames: false
+        entry: isort .
+        fail_fast: true
+-   repo: https://github.com/psf/black
+    rev: 25.1.0
+    hooks:
+    -   id: black
+        language_version: python3
+-   repo: https://github.com/pycqa/flake8
+    rev: 7.3.0
+    hooks:
+    -   id: flake8
+        args: ['--ignore=F401', '--max-line-length=150']
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.17.0
+    hooks:
+    -   id: mypy
+-   repo: https://github.com/rubik/xenon
+    rev: v0.9.3
+    hooks:
+    -   id: xenon
+        args: ['--max-absolute=B', '--max-modules=B', '--max-average=A', '--exclude=tests/*']
+-   repo: https://github.com/regebro/pyroma
+    rev: "5.0"
+    hooks:
+    -   id: pyroma
+-   repo: https://github.com/econchick/interrogate
+    rev: 1.7.0
+    hooks:
+      - id: interrogate
+        args: ['--fail-under=80', '--verbose']
+-   repo: https://github.com/pycqa/pydocstyle
+    rev: 6.3.0
+    hooks:
+    -   id: pydocstyle
+        args: ['--ignore=D203,D204,D212,D401,D413']
+-   repo: local
+    hooks:
+      - id: dos2unix
+        name: dos2unix
+        language: system
+        entry: dos2unix
+- repo: local
+  hooks:
+      - id: docs
+        exclude: ^tests/
+        name: docs
+        language: system
+        pass_filenames: false
+        entry: handsdown --exclude tests/* venv/* dist/* cov/*
+- repo: local
+  hooks:
+      - id: tests
+        name: tests
+        language: system
+        pass_filenames: false
+        entry: pytest
+        fail_fast: true
+- repo: local
+  hooks:
+      - id: coverage
+        name: coverage
+        language: script
+        pass_filenames: false
+        entry: devel/coverage.sh
+- repo: local
+  hooks:
+      - id: badges
+        name: badges
+        language: script
+        pass_filenames: false
+        entry: devel/badges.sh
